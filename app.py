@@ -13,6 +13,12 @@ with open('model.pkl', 'rb') as model_file:
 def home():
     return jsonify("Hello World DiabTech Backend!!! ")
 
+@app.route("/data",methods=['POST'])
+def demo():
+    data = request.json
+    print("data recived from ardino: "+data)
+    return jsonify({"data":data}),400
+
 @app.route("/check-glucose",methods=['POST'])
 def predictGlucose():
     try:
