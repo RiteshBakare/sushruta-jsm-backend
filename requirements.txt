@@ -1,5 +1,5 @@
+pickle
 Flask
 pandas
 Gunicorn
-pickle
 flask_cors
