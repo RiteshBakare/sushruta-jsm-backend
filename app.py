@@ -72,10 +72,10 @@ def predictGlucose():
             "timestamp": datetime.now().isoformat()
         }
 
-        file_path = './public/glucose_results.json'
-        with open(file_path, 'a') as f:
-            json.dump(output, f)
-            f.write("\n")
+        # file_path = './public/glucose_results.json'
+        # with open(file_path, 'a') as f:
+        #     json.dump(output, f)
+        #     f.write("\n")
 
         mongo_document = {
             "input": float_data,
