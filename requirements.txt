@@ -2,3 +2,4 @@ Flask
 pandas
 Gunicorn
 flask_cors
+scikit-learn==1.3.2
